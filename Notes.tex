@@ -1,0 +1,141 @@
+\documentclass[a4paper,oneside,11pt]{article}
+
+\usepackage[
+    top=3cm,
+    bottom=3cm,
+    left=3cm,
+    right=3cm,
+    heightrounded,
+    bindingoffset=5mm
+]{geometry}
+
+\pagestyle{plain}
+
+\usepackage{amsfonts}
+\usepackage{amsmath}
+\usepackage{braket}
+\usepackage{mathtools}
+\usepackage{quantikz}
+\usepackage{wrapfig}
+
+\usepackage{hyperref}
+\hypersetup{
+    colorlinks,
+    citecolor=black,
+    filecolor=black,
+    linkcolor=black,
+    urlcolor=black
+}
+
+\setlength\parindent{0pt}
+
+%\setlength\parindent{0pt}
+
+\title{Topological Quantum Computing}
+\author{Gergely Lendvay}
+\date{\today}
+
+\begin{document}
+\maketitle\clearpage
+
+\tableofcontents\clearpage
+
+\newpage\section*{Introduction}
+\subsection{Course Info}
+\subsubsection{Teachers}
+\noindent Konstantin Wernli -- kwernli@imada.sdu.dk
+
+\noindent William Mistegard -- wem@imada.sdu.dk
+
+\subsubsection{Exercise Classes}
+Once a week with at least 3 solutions handed in.
+
+\subsubsection{Exam}
+\begin{enumerate}
+    \item Assessment is based on four graded exercise sheets, and
+    \item Final oral exam consisting of:
+    \begin{itemize}
+        \item 10--12 minutes presentation,
+        \item 13--15 minutes discussion and questions,
+        \item 4--5 possible topics, with 30 minutes of preparation time.
+    \end{itemize}
+    \item Tentative exam date: January 18, 2027
+\end{enumerate}
+
+\subsubsection{Books}
+N/A
+
+\newpage\section{First Lecture}
+\subsection{Topological Quantum Computing}
+Different fields:
+\begin{itemize}
+    \item Condensed matter physics: topological phases of matter
+    \item Topological Quantum Field Theory
+    \item TQFT's in math
+    \item Anyon models/UMTC in math
+\end{itemize}
+
+\subsection{What is Topological Quantum Computing?}
+Digital vs analog quantum computing.
+
+\paragraph{Problem}
+They are prone to errors and noise, such as spam error during state preparation, gate fidelities as well as decoherence.
+
+The idea of TQC is to use very special physical systems where information is encoded in discrete global properties.
+These are topological phases of matter.
+
+Certain phases in $2+1$ dimensions, with 2 spatial dimensions and 1 time, admit anyons.
+Anyons are a special class of (quasi) particles with statistics different from bosons and fermions.
+
+In more than $2+1$ dimensions $T^2=1\rightarrow T=\pm1$
+$+1=e^{i2\pi i}$ bosons
+$-1=^{\pi i}$ fermions
+
+In $2+1$ dimension $T_2\neq1$, meaning it can get any phase $T=e^{i\Theta}$
+
+If $T=e^{i\Theta}\rightarrow$ abelian anyons, but there are non-abelian anyons where T can be a unitary acting on $\mathcal{H}$.
+These are the unitary we want to use in TQC.
+
+\subsection{Non-abelian anyons}
+Described by $\ket{\psi}\in\mathcal{H}$ when exchanging anyons
+\[\ket{\psi}\to U\ket{\psi},\]
+for some unitary $U$.
+
+Braids form a group.
+
+Companies trying to develop non-abelian anyons: Microsoft and Nokia
+Simulate anyons on quantum computer (topological codes): Google and Quantinuum
+
+\subsection{Plan}
+Math foundations:
+\begin{itemize}
+    \item Groups (braid),
+    \item Representation,
+    \item Category theory,
+    \item Topology.
+\end{itemize}
+
+TQC:
+\begin{itemize}
+    \item Anyon models,
+    \item Examples,
+    \item Equivalence to digital quantum computing,
+    \item Relation to TQFT's, etc.
+\end{itemize}
+
+TQC in practice:
+\begin{itemize}
+    \item Topological phases of matter,
+    \item Experimental realizations.
+\end{itemize}
+
+Topological codes:
+\begin{itemize}
+    \item Surface codes,
+    \item Other classes of topological codes.
+\end{itemize}
+
+\newpage\section{Second Lecture}
+\subsection{}
+
+\end{document}
